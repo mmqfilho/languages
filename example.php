@@ -19,4 +19,4 @@ $objLang = new Lang();
 //$objLang->__set('message_not_found', 'I dont like default message');
 
 // show the text
-echo $objLang->load('index', 'welcome');
+echo $objLang->load('example', 'welcome');
