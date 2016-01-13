@@ -5,7 +5,7 @@ date: `2016/01/12`
 
 Author: `Marcos Menezes <mmqfilho@gmail.com>`
 
-# Directory structure
+## Directory structure
 ```
 | your_project_root
 |-# class (your class folder)
@@ -22,7 +22,7 @@ Author: `Marcos Menezes <mmqfilho@gmail.com>`
 |   |- others language files
 ```
 
-# How to use
+## How to use
 
 include the file and set the namespace
 ```
