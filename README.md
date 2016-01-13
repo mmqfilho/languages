@@ -61,7 +61,8 @@ $objLang->__set('message_not_found', 'I dont like default message');
 ```
 
 Show the text
-Param 1 is the name of xml file without the '.xml' and the param 2 is the index of text
+* Param 1 is the name of xml file without the '.xml' 
+* Param 2 is the name of xml tag
 ```
 echo $objLang->load('index', 'welcome');
 ```
