@@ -1,6 +1,8 @@
 # Class Languages
 version: 1.0
+
 date: 2016/01/12
+
 Author: Marcos Menezes <mmqfilho@gmail.com>
 
 # Directory structure
