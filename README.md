@@ -15,8 +15,8 @@ Author: `Marcos Menezes <mmqfilho@gmail.com>`
 | |-# en (english language folder)
 | |  |- your english language files
 | |
-| |-# pt-br (brazillian portuguese language folder)
-| | |- your brazillian portuguese language files
+| |-# pt-br (brazilian portuguese language folder)
+| | |- your brazilian portuguese language files
 | |
 | |-# xxxx (other languages folder)
 |   |- others language files
