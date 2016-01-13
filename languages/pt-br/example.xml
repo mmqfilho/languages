@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Português brasileiro -->
+<languages>
+	<welcome>Bem vindo</welcome>
+	<welcomeCData><![CDATA[<strong>Aviso:</strong> Bem vindo.]]></welcomeCData>
+</languages>
