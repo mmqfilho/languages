@@ -61,6 +61,22 @@ $objLang->__set('message_not_found', 'I dont like default message');
 ```
 
 Show the text
+Param 1 is the name of xml file without the '.xml' and the param 2 is the index of text
 ```
 echo $objLang->load('index', 'welcome');
 ```
+
+## The XML files
+In the tag `<languages>` put your own translation tags
+
+If you use a html tag or special caracteres put into CDATA tag.
+```
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- English -->
+<languages>
+	<welcome>Welcome</welcome>
+	<welcomeCData><![CDATA[<strong>Warning:</strong> Welcome.]]></welcomeCData>	
+</languages>
+```
+
