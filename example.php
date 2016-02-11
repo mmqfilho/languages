@@ -20,3 +20,6 @@ $objLang = new Lang();
 
 // show the text
 echo $objLang->load('example', 'welcome');
+
+// show text with one or more parameters in array
+echo $objLang->load('example', 'version', array('1.0.2'));
