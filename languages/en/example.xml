@@ -3,5 +3,6 @@
 <!-- English -->
 <languages>
 	<welcome>Welcome</welcome>
-	<welcomeCData><![CDATA[<strong>Warning:</strong> Welcome.]]></welcomeCData>	
+	<welcomeCData><![CDATA[<strong>Warning:</strong> Welcome.]]></welcomeCData>
+	<version><![CDATA[Version: %s]]></version>
 </languages>
