@@ -114,9 +114,10 @@ Class Language
 	 * @access public
 	 * @param $strSource - xml page to load
 	 * @param $strText - xml index
+	 * @param $arrayData - Dinamic elements to load in the text
 	 * @return string || boolean
 	 */
-	public function load($strSource, $strText){
+	public function load($strSource, $strText, $arrayData = null){
 		
 		$lang = $this->getLanguageCookie();
 		
@@ -128,6 +129,10 @@ Class Language
 			$xml = simplexml_load_file('../../'.$this->directory.'/'.$lang.'/'.$strSource.'.xml');
 		}else{
 			return false;
+		}
+		
+		if ($arrayData != null){
+			$xml->$strText = vsprintf($xml->$strText, $arrayData);
 		}
 		
 		return ($xml->$strText != '' ? $xml->$strText : ($this->show_message_not_found == true ? $this->message_not_found : ''));
