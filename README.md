@@ -63,21 +63,29 @@ $objLang->__set('message_not_found', 'I dont like default message');
 Show the text
 * Param 1 is the name of xml file without the '.xml' 
 * Param 2 is the name of xml tag
+* Param 3 (optional) is a variables array
 ```
 echo $objLang->load('index', 'welcome');
+or with an array with one or many variables
+echo $objLang->load('index', 'yourName', array('Marcos'));
+echo $objLang->load('index', 'yourFullName', array('Marcos', 'Menezes'));
 ```
 
 ## The XML files
 In the tag `<languages>` put your own translation tags
 
 If you use a html tag or special caracteres put into CDATA tag.
+
+If you use a variable to send a parameter, put the '%s' in the tag
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- English -->
 <languages>
 	<welcome>Welcome</welcome>
-	<welcomeCData><![CDATA[<strong>Warning:</strong> Welcome.]]></welcomeCData>	
+	<welcomeCData><![CDATA[<strong>Warning:</strong> Welcome %s.]]></welcomeCData>
+	<yourName><![CDATA[Your name is: %s.]]></yourName>
+	<yourFullName><![CDATA[Your full name is: %s %s.]]></yourFullName>
 </languages>
 ```
 
