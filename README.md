@@ -1,7 +1,7 @@
 # Class Languages
-version: `1.0`
+version: `1.1`
 
-date: `2016/01/12`
+date: `2016/10/20`
 
 Author: `Marcos Menezes <mmqfilho@gmail.com>`
 
@@ -60,6 +60,18 @@ $objLang->__set('show_message_not_found', true);
 $objLang->__set('message_not_found', 'I dont like default message');
 ```
 
+(optional) number of recursive attempts in directories to find the language files (3 is the default)
+```
+$objLang->__set('recursiveDirCount', 3);
+```
+
+(optional) set the file type to load (json or xml) (json is the default file type)
+```
+$objLang->setXml();
+or
+$objLang->setJson();
+```
+
 Show the text
 * Param 1 is the name of xml file without the '.xml' 
 * Param 2 is the name of xml tag
@@ -87,5 +99,15 @@ If you use a variable to send a parameter, put the '%s' in the tag
 	<yourName><![CDATA[Your name is: %s.]]></yourName>
 	<yourFullName><![CDATA[Your full name is: %s %s.]]></yourFullName>
 </languages>
+```
+
+## The JSON files
+If you use a variable to send a parameter, put the '%s' in the tag
+```
+{
+	"welcome": "Welcome to json version",
+	"welcomeTag": "<strong>Warning:</strong> Welcome json.",
+	"version": "Version: %s"
+}
 ```
 
