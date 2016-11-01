@@ -19,7 +19,7 @@ $objLang = new Lang();
 //$objLang->__set('message_not_found', 'I dont like default message');
 
 // show the text
-echo $objLang->load('example', 'welcome');
+echo $objLang->load('example', 'welcome', array('ops'));
 
 // show text with one or more parameters in array
-echo $objLang->load('example', 'version', array('1.0.2'));
+echo $objLang->load('example', 'version', array('1.0.2', 'pal'));
