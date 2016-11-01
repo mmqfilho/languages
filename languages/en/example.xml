@@ -2,7 +2,7 @@
 
 <!-- English -->
 <languages>
-	<welcome>Welcome %s</welcome>
-	<welcomeCData><![CDATA[<strong>Warning:</strong> Welcome.]]></welcomeCData>
-	<version><![CDATA[Version: %s %s]]></version>
+	<welcome>Welcome to xml version</welcome>
+	<welcomeCData><![CDATA[<strong>Warning:</strong> Welcome xml.]]></welcomeCData>
+	<version><![CDATA[Version: %s]]></version>
 </languages>

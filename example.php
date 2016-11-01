@@ -18,6 +18,14 @@ $objLang = new Lang();
 // (optional) the message to show if not found the text
 //$objLang->__set('message_not_found', 'I dont like default message');
 
+// (optional) number of recursive attempts in directories to find the language files (3 is the default)
+//$objLang->__set('recursiveDirCount', 3);
+
+// (optional) set the file type to load (json or xml) (json is the default file type)
+//$objLang->setXml();
+// or
+$objLang->setJson();
+
 // show the text
 echo $objLang->load('example', 'welcome', array('ops'));
 

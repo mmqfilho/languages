@@ -1,0 +1,5 @@
+{
+	"welcome": "Welcome to json version",
+	"welcomeTag": "<strong>Warning:</strong> Welcome json.",
+	"version": "Version: %s"
+}
