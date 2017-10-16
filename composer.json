@@ -16,6 +16,8 @@
         "php": ">=5.3.0"
     },
     "autoload": {
-        "classmap": ["class"]
-    }
+    	"psr-0": {
+			"mmqfilho": "class/"
+    	}
+	}
 }
