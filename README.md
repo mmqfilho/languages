@@ -1,19 +1,21 @@
 # Class Languages
-version: `1.1`
+version: `1.2.3`
 
-date: `2016/10/20`
+date: `2017/10/17`
 
 Author: `Marcos Menezes <mmqfilho@gmail.com>`
 
 ## Directory structure
 ```
 | your_project_root
-|-# class (your class folder)
-| |- language.class.php
+|-# class (class folder)
+| |-# Mmqfilho
+|   |-# Languages
+|     |- Language.php (class file)
 |
 |-# languages (language folder)
 | |-# en (english language folder)
-| |  |- your english language files
+| | |- your english language files
 | |
 | |-# pt-br (brazilian portuguese language folder)
 | | |- your brazilian portuguese language files
@@ -26,7 +28,10 @@ Author: `Marcos Menezes <mmqfilho@gmail.com>`
 
 include the file and set the namespace
 ```
-include_once 'class/language.class.php';
+include_once 'class/Mmqfilho/Languages/Language.php';
+or use autoload composer
+include_once YOUR_VENDOR_DIR . '/autoload.php' ;
+
 use mmqfilho\Languages\Language as Lang;
 ```
 
