@@ -1,5 +1,5 @@
 # Class Languages
-version: `1.2.3`
+version: `1.2.4`
 
 date: `2017/10/17`
 
